@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: devosmium.xyz Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -90,7 +90,7 @@ defaultContentLanguage: en
 # localhost should automatically work.
 #
 # Example: https://status.example.com/
-baseURL: https://cstate.mnts.lt
+baseURL: https://status.devosmium.xyz
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -121,10 +121,11 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: East Coast      
+    - name: New Jersey
+      description: Includes the Kronos server and most Discord services
+      closed: false
+    - name: London
+      description: Includes certain Discord services and websites      
     - name: Uncategorized
       untitled: true
 
@@ -134,16 +135,28 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: East Coast
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+    - name: Kronos
+      category: New Jersey
+    - name: Gilwell
+      category: London
+    - name: Campmaster Constantine
+      description: Main Discord application. Reliant on PostgreSQL
+      category: New Jersey
+    - name: TDC Bot
+      description: Instance of Campmaster Constantine branded for The Digital Campfire. Reliant on PostgreSQL
+      category: New Jersey
+    - name: Robot Baden-Powell
+      description: Bespoke Discord bot for the Discord Scout Troop
+      category: New Jersey
+    - name: DSC Bot
+      description: Bespoke bot for the Discord Scout Council
+      category: New Jersey
+    - name: Homepage
+      description: Static homepage at https://devosmium.xyz
+      category: New Jersey
+    - name: File CDN
+      description: File pastebin
+      category: London
 
   # What date format to use?
   #
@@ -192,7 +205,7 @@ params:
   #
   # Default: false
   # BOOLEAN; `true`, `false`
-  useLogo: true
+  useLogo: false
 
   # Where is the logo located, if one is
   # present at all?
@@ -214,10 +227,9 @@ params:
   # Uncomment to enable.
   #
   # Format:
-  # customTabs:
-  #  -
-  #    name: Name
-  #    link: https://example.com
+  #customTabs:
+  # - name: Homepage
+  #   link: https://devosmium.xyz
 
   # Disable complex server-side
   # calculations that may impact
@@ -264,7 +276,7 @@ params:
   #
   # Default: `true`
   # BOOLEAN; `true`, `false`
-  alwaysKeepBrandColor: true
+  alwaysKeepBrandColor: false
   
   # Introduced in v4.0.1 for consistent
   # site title text color.
