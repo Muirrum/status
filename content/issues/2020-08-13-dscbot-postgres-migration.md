@@ -1,7 +1,7 @@
 ---
 title: Postgres Migration
 date: 2020-08-13 17:00:00
-resolved: false
+resolved: true
 resolvedWhen: 
 # You can use: down, disrupted, notice
 severity: notice
